@@ -37,13 +37,16 @@ const Update = () => {
 
     const updateUser = { name, email, age };
 
-    const response = await fetch(`http://localhost:8000/user/${id}`, {
-      method: "PATCH",
-      body: JSON.stringify(updateUser),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const response = await fetch(
+      `https://crudapp-0215.onrender.com/user/${id}`,
+      {
+        method: "PATCH",
+        body: JSON.stringify(updateUser),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
     const result = await response.json();
 

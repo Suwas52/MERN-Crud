@@ -18,7 +18,7 @@ const Create = () => {
 
     const addUser = { name, email, age };
 
-    const response = await fetch("http://localhost:8000/user", {
+    const response = await fetch("https://crudapp-0215.onrender.com/user", {
       method: "POST",
       body: JSON.stringify(addUser),
       headers: {

@@ -6,7 +6,7 @@ const Read = () => {
   const [error, setError] = useState("");
 
   async function getData() {
-    const response = await fetch("http://localhost:8000/user");
+    const response = await fetch("https://crudapp-0215.onrender.com/user");
 
     const result = await response.json();
 
